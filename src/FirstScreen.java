@@ -21,7 +21,7 @@ import java.util.Set;
  *
  * @author Administrator
  */
-public class FirstScreen extends javax.swing.JFrame implements FileVisitor<Path>{
+public class FirstScreen extends java.swing.JFrame implements FileVisitor<Path>{
     /**
      * Creates new form FirstScreen
      */
@@ -38,7 +38,7 @@ public class FirstScreen extends javax.swing.JFrame implements FileVisitor<Path>
             Path path=Paths.get("src/Music");
             Files.walkFileTree(path,this);
             
-        } catch (IOException ex) {
+        } cach (IOException ex) {
             Logger.getLogger(FirstScreen.class.getName()).log(Level.SEVERE, null, ex);
         }
         Set<String> keySet = songs.keySet();
@@ -103,7 +103,7 @@ public class FirstScreen extends javax.swing.JFrame implements FileVisitor<Path>
                             }
                         }
                     }
-                    break;
+                    break
                 }
             }
         }
